@@ -8,6 +8,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+/**
+ * Repository for interest rates.
+ */
 @Component
 @RequiredArgsConstructor
 public class InterestRateRepository {

@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * Controller for interest rates.
+ */
 @RestController
 @RequestMapping(value = "/api/interest-rates")
 @RequiredArgsConstructor
@@ -19,6 +22,11 @@ public class InterestRateController {
 
     private final InterestRateMapper interestRateMapper;
 
+    /**
+     * Get all interest rates.
+     *
+     * @return the list of interest rates
+     */
     @GetMapping
     public List<InterestRateDto> getInterestRates() {
         var interestRates = interestRateService.getAllInterestRates();

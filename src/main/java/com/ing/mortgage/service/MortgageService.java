@@ -9,6 +9,9 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+/**
+ * Service for mortgage checks.
+ */
 @Service
 @RequiredArgsConstructor
 public class MortgageService {
@@ -17,6 +20,12 @@ public class MortgageService {
 
     private final InterestRateRepository interestRateRepository;
 
+    /**
+     * Check if a mortgage is feasible and calculate the monthly cost.
+     *
+     * @param request the mortgage check request
+     * @return the mortgage check result
+     */
     public MortgageCheckDto checkMortgage(MortgageCheckRequest request) {
 
         var result = new MortgageCheckDto();

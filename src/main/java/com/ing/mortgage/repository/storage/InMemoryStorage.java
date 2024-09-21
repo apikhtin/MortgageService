@@ -9,6 +9,9 @@ import java.time.Instant;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * In-memory storage for interest rates.
+ */
 @Getter
 @Component
 public class InMemoryStorage {

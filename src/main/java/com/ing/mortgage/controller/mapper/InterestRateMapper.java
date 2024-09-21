@@ -6,6 +6,9 @@ import org.mapstruct.Mapper;
 
 import java.util.List;
 
+/**
+ * Mapper for interest rates.
+ */
 @Mapper(componentModel = "spring")
 public interface InterestRateMapper {
 
