@@ -16,6 +16,6 @@ public class InterestRate {
 
     private double interestRate;
 
-    private Instant lastUpdate; //todo: check data format
+    private Instant lastUpdate;
 
 }
